@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Text theme. -->
+    <style name="Headline1" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/balsamiq_sans_bold</item>
+        <item name="android:textSize">@dimen/Headline1</item>
+    </style>
+
+    <style name="Headline1_85" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/white_85</item>
+        <item name="android:fontFamily">@font/balsamiq_sans_bold</item>
+        <item name="android:textSize">@dimen/Headline1</item>
+    </style>
+
+    <style name="Headline2" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/balsamiq_sans_bold</item>
+        <item name="android:textSize">@dimen/Headline2</item>
+    </style>
+
+    <style name="Headline3" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/balsamiq_sans_bold</item>
+        <item name="android:textSize">@dimen/Headline3</item>
+    </style>
+
+    <style name="Body1" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/balsamiq_sans</item>
+        <item name="android:textSize">@dimen/Body1</item>
+    </style>
+
+    <style name="Body1_54" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/white_54</item>
+        <item name="android:fontFamily">@font/balsamiq_sans</item>
+        <item name="android:textSize">@dimen/Body1</item>
+    </style>
+
+    <style name="Body2" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/balsamiq_sans</item>
+        <item name="android:textSize">@dimen/Body2</item>
+    </style>
+
+    <style name="Body2_85" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/white_85</item>
+        <item name="android:fontFamily">@font/balsamiq_sans</item>
+        <item name="android:textSize">@dimen/Body2</item>
+    </style>
+
+    <style name="ButtonText" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/balsamiq_sans_bold</item>
+        <item name="android:textSize">@dimen/Button</item>
+    </style>
+
+    <style name="Caption" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/balsamiq_sans</item>
+        <item name="android:textSize">@dimen/Caption</item>
+    </style>
+
+</resources>

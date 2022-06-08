@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_700">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_700"
+        android:theme="?attr/actionBarTheme"
+        app:contentInsetEnd="@dimen/margin_normal"
+        app:contentInsetStart="@dimen/margin_normal"
+        android:minHeight="@dimen/height_toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageViewBack"
+                style="@style/Icon"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0"
+                android:src="@drawable/ic_arrow_back_18dp"
+                android:contentDescription="@string/description_image_back" />
+
+            <TextView
+                style="@style/Headline3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin3"
+                android:layout_weight="1"
+                android:text="@string/title_text_fragment_settings"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_normal"
+        android:orientation="vertical" >
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/gray_900">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin1"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingVertical="@dimen/margin1"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_marginEnd="@dimen/margin3"
+                        style="@style/Icon_85"
+                        android:layout_weight="0"
+                        android:src="@drawable/ic_volume_18dp"
+                        android:contentDescription="@string/description_icon_sound" />
+                    <TextView
+                        style="@style/Body2_85"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/text_sound" />
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/switchSound"
+                        style="@style/Switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0"
+                        android:checked="true"
+                        tools:ignore="DuplicateSpeakableTextCheck,TouchTargetSizeCheck" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingVertical="@dimen/margin1"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_marginEnd="@dimen/margin3"
+                        style="@style/Icon_85"
+                        android:layout_weight="0"
+                        android:src="@drawable/ic_vibration_18dp"
+                        android:contentDescription="@string/description_icon_vibration" />
+                    <TextView
+                        style="@style/Body2_85"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/text_vibration" />
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/switchVibration"
+                        style="@style/Switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0"
+                        android:checked="true"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin1_5"
+            android:backgroundTint="@color/gray_900">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:layout_margin="@dimen/margin1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/layoutLanguages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingVertical="@dimen/margin1"
+                    tools:ignore="TouchTargetSizeCheck"
+                    android:focusable="true">
+
+                    <ImageView
+                        style="@style/Icon_85"
+                        android:layout_marginEnd="@dimen/margin3"
+                        android:layout_weight="0"
+                        android:contentDescription="@string/description_icon_idiom"
+                        android:src="@drawable/ic_language_18dp" />
+
+                    <TextView
+                        style="@style/Body2_85"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/text_idiom" />
+
+                    <ImageView
+                        android:id="@+id/imageViewFlagSelect"
+                        style="@style/IconFlag"
+                        android:layout_weight="0"
+                        android:animateLayoutChanges="true"
+                        android:contentDescription="@string/description_icon_flag"
+                         />
+
+                    <TextView
+                        android:id="@+id/textViewIdiom"
+                        style="@style/Caption"
+                        android:animateLayoutChanges="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0"
+                        android:gravity="center"
+                        android:paddingHorizontal="16dp"
+                         />
+
+                    <ImageView
+                        android:id="@+id/imageViewiIdiom"
+                        style="@style/SubIcon"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0"
+                        android:contentDescription="@string/description_icon_next"
+                        android:src="@drawable/ic_arrow_expande_24dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutLanguagesOptions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/view_height"
+                        android:background="@color/gray_700" />
+
+                    <LinearLayout
+                        android:id="@+id/layout_spanish"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="8dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/icon_medio"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="@dimen/margin3"
+                            android:contentDescription="@string/description_icon_flag"
+                            android:src="@mipmap/ic_flag_spanish" />
+
+                        <TextView
+                            style="@style/Body2_85"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_language_spanish" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_english"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="@dimen/margin1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/icon_medio"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="@dimen/margin3"
+                            android:contentDescription="@string/description_icon_flag"
+                            android:src="@mipmap/ic_flag_english" />
+
+                        <TextView
+                            style="@style/Body2_85"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_language_english" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button"
+                style="@style/ButtonNormal"
+                android:text="@string/text_button_home"
+                tools:ignore="TextContrastCheck" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

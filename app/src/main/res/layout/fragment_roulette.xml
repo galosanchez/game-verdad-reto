@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_900"
+    tools:context=".RouletteFragment">
+
+    <ImageView
+        android:id="@+id/imageViewSettings"
+        style="@style/Icon"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:layout_marginEnd="@dimen/margin_normal"
+        android:src="@drawable/ic_settings_18dp"
+        android:contentDescription="@string/description_icon_settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/buttonTruth"
+            style="@style/ButtonDisable"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:text="@string/text_button_truth" />
+
+        <Button
+            android:id="@+id/buttonDare"
+            style="@style/ButtonDisable"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            android:text="@string/text_button_dare" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageViewRoulette"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_normal"
+        android:layout_marginEnd="@dimen/margin_normal"
+        android:adjustViewBounds="true"
+        android:src="@mipmap/img_roulette_6users"
+        android:contentDescription="@string/description_image_roulette"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewPlayer"
+        style="@style/Headline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/player_name"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewRoulette"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewBottle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_bottle"
+        android:layout_marginEnd="@dimen/margin_bottle"
+        android:adjustViewBounds="true"
+        android:src="@mipmap/img_bottle"
+        android:contentDescription="@string/description_image_bottle"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewRoulette"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewRoulette" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

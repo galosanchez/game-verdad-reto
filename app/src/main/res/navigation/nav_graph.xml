@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.galosanchez.verdadreto.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment"
+            app:enterAnim="@anim/move_in_right"
+            app:exitAnim="@anim/not_move"
+            app:popEnterAnim="@anim/not_move"
+            app:popExitAnim="@anim/move_out_right">
+        </action>
+        <action
+            android:id="@+id/action_homeFragment_to_playersFragment"
+            app:destination="@id/playersFragment"
+            app:enterAnim="@anim/move_in_right"
+            app:exitAnim="@anim/move_out_left"
+            app:popEnterAnim="@anim/move_in_left"
+            app:popExitAnim="@anim/move_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.galosanchez.verdadreto.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popUpTo="@+id/homeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/playersFragment"
+        android:name="com.galosanchez.verdadreto.PlayersFragment"
+        android:label="fragment_players"
+        tools:layout="@layout/fragment_players" >
+        <action
+            android:id="@+id/action_playersFragment_to_rouletteFragment"
+            app:destination="@id/rouletteFragment"
+            app:enterAnim="@anim/move_in_right"
+            app:exitAnim="@anim/move_out_left"
+            app:popEnterAnim="@anim/move_in_left"
+            app:popExitAnim="@anim/move_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/rouletteFragment"
+        android:name="com.galosanchez.verdadreto.RouletteFragment"
+        android:label="fragment_roulette"
+        tools:layout="@layout/fragment_roulette" >
+        <action
+            android:id="@+id/action_rouletteFragment_to_truthCardFragment"
+            app:destination="@id/truthCardFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_rouletteFragment_to_dareCardFragment"
+            app:destination="@id/dareCardFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_rouletteFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment"
+            app:enterAnim="@anim/move_in_right"
+            app:exitAnim="@anim/not_move"
+            app:popEnterAnim="@anim/not_move"
+            app:popExitAnim="@anim/move_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/truthCardFragment"
+        android:name="com.galosanchez.verdadreto.TruthCardFragment"
+        android:label="fragment_truth_card"
+        tools:layout="@layout/fragment_truth_card" />
+    <fragment
+        android:id="@+id/dareCardFragment"
+        android:name="com.galosanchez.verdadreto.DareCardFragment"
+        android:label="fragment_dare_card"
+        tools:layout="@layout/fragment_dare_card" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.galosanchez.verdadreto.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+</navigation>

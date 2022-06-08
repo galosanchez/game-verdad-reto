@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="icon_medio">28dp</dimen>
+    <dimen name="icon">20dp</dimen>
+    <dimen name="subicon">16dp</dimen>
+    <dimen name="iconflag">22dp</dimen>
+    <dimen name="iconfloatingactionbutton">20dp</dimen>
+
+    <!-- Margen dimen. -->
+    <dimen name="margin1">8dp</dimen>
+    <dimen name="margin_normal">12dp</dimen>
+    <dimen name="margin2_vertical">12dp</dimen>
+    <dimen name="margin3">20dp</dimen>
+    <dimen name="margin4">24dp</dimen>
+    <dimen name="height_toolbar">48dp</dimen>
+    <dimen name="margin_bottle">40dp</dimen>
+
+    <!-- Text dimen. -->
+    <dimen name="Headline1">24sp</dimen>
+    <dimen name="Headline2">24sp</dimen>
+    <dimen name="Headline3">16sp</dimen>
+    <dimen name="Body1">16sp</dimen>
+    <dimen name="Body2">14sp</dimen>
+    <dimen name="Button">14sp</dimen>
+    <dimen name="Caption">12sp</dimen>
+
+    <!-- Card dimen. -->
+    <dimen name="CardMarginHorizontal">20dp</dimen>
+    <dimen name="CardPadding">12dp</dimen>
+    <dimen name="CardPaddingVerticalText">32dp</dimen>
+    <dimen name="CardCornerRadius">12dp</dimen>
+    <dimen name="CardPaddingTextNext">6dp</dimen>
+
+    <!-- Component dimen. -->
+    <dimen name="SwitchScale">0.75</dimen>
+    <dimen name="SwitPaddingRight">0dp</dimen>
+
+    <dimen name="ButtonPadding">4dp</dimen>
+    <dimen name="ButtonCorner">6dp</dimen>
+
+    <dimen name="TextViewPlayPadding">4dp</dimen>
+
+    <dimen name="EditTextHeight">32dp</dimen>
+    <dimen name="EditTextMarginHorizontal">4dp</dimen>
+    <dimen name="EditTextMarginVertical">8dp</dimen>
+
+    <dimen name="floatingactionbutton">36dp</dimen>
+    <dimen name="floatingactionbutton_margin">4dp</dimen>
+
+    <dimen name="view_height">1dp</dimen>
+
+    <color name="prueba">#FF5722</color>
+
+</resources>

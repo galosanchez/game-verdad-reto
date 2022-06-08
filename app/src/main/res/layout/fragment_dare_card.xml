@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/gray_900"
+    tools:context=".DareCardFragment">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/CardMarginHorizontal"
+        app:cardBackgroundColor="@color/dare"
+        app:cardElevation="50dp"
+        app:cardCornerRadius="@dimen/CardCornerRadius"
+        android:outlineSpotShadowColor="@color/dare_70"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:targetApi="p">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/CardPadding">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Headline3"
+                android:textColor="@color/white"
+                android:text="@string/edittext_dare"/>
+            <TextView
+                android:id="@+id/textViewDare"
+                style="@style/Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="@dimen/CardPaddingVerticalText"
+                android:text="@string/player_name"
+                android:textAlignment="center"
+                android:textColor="@color/white_70"
+                tools:ignore="TextContrastCheck" />
+            <TextView
+                android:id="@+id/textViewContinue"
+                style="@style/Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/CardPaddingTextNext"
+                android:text="@string/edittext_to_continue"
+                android:textColor="@color/white_70"
+                tools:ignore="TextContrastCheck" />
+            <TextView
+                style="@style/Headline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:rotation="180"
+                android:text="@string/edittext_dare"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

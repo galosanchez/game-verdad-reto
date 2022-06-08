@@ -1,0 +1,171 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.VerdadOReto" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/gray_900</item>
+        <item name="colorPrimaryVariant">@color/gray_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorAccent">@color/blue</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/blue</item>
+        <item name="colorSecondaryVariant">#076AB6</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="extendedFloatingActionButtonStyle">
+            @style/Widget.App.ExtendedFloatingActionButton
+        </item>
+    </style>
+
+    <style name="SplashScreen" parent="Theme.VerdadOReto">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+    </style>
+
+    <style name="Widget.App.Button.OutlinedButton.IconOnly" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="iconPadding">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:minWidth">48dp</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+    <style name="EditText">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:imeOptions">flagNoFullscreen</item>
+        <item name="android:inputType">text</item>
+        <item name="android:textSize">@dimen/Body2</item>
+        <item name="android:fontFamily">@font/balsamiq_sans</item>
+        <item name="android:background">@drawable/custom_edittext</item>
+        <item name="android:textColorHint">@color/white_38</item>
+    </style>
+
+    <style name="Widget.App.ExtendedFloatingActionButton" parent="Widget.MaterialComponents.ExtendedFloatingActionButton.Icon">
+        <item name="shapeAppearanceOverlay">
+            @style/ShapeAppearance.App.SmallComponent
+        </item>
+    </style>
+
+    <style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/ButtonCorner</item>
+    </style>
+
+    <style name="Widget.App.FloatingActionButton" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="shapeAppearanceOverlay">
+            @style/ShapeAppearance.App.SmallComponent
+        </item>
+    </style>
+
+    <style name="Switch">
+        <item name="useMaterialThemeColors">false</item>
+        <item name="android:scaleX">@dimen/SwitchScale</item>
+        <item name="android:scaleY">@dimen/SwitchScale</item>
+        <item name="android:paddingRight">@dimen/SwitPaddingRight</item>
+    </style>
+
+    <style name="Icon">
+        <item name="android:layout_width">@dimen/icon</item>
+        <item name="android:layout_height">@dimen/icon</item>
+        <item name="tint">@color/white</item>
+    </style>
+
+    <style name="IconUser">
+        <item name="android:layout_width">@dimen/icon</item>
+        <item name="android:layout_height">@dimen/icon</item>
+        <item name="tint">#000000</item>
+    </style>
+
+    <style name="Icon_85">
+        <item name="android:layout_width">@dimen/icon</item>
+        <item name="android:layout_height">@dimen/icon</item>
+        <item name="tint">@color/white_85</item>
+    </style>
+
+    <style name="SubIcon">
+        <item name="android:layout_width">@dimen/subicon</item>
+        <item name="android:layout_height">@dimen/subicon</item>
+        <item name="tint">@color/white</item>
+    </style>
+
+    <style name="SubIcon_85">
+        <item name="android:layout_width">@dimen/subicon</item>
+        <item name="android:layout_height">@dimen/subicon</item>
+        <item name="tint">@color/white_85</item>
+    </style>
+
+    <style name="IconFlag">
+        <item name="android:layout_width">@dimen/iconflag</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="ButtonNormal" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/ButtonPadding</item>
+        <item name="android:paddingBottom">@dimen/ButtonPadding</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/Button</item>
+        <item name="android:backgroundTint">@color/blue</item>
+        <item name="android:fontFamily">@font/balsamiq_sans</item>
+        <item name="cornerRadius">@dimen/ButtonCorner</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ButtonNormalText" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0</item>
+        <item name="android:textSize">@dimen/Body2</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/balsamiq_sans</item>
+        <item name="cornerRadius">@dimen/ButtonCorner</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="rippleColor">@color/white_15</item>
+    </style>
+
+    <style name="ButtonDisable" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/ButtonPadding</item>
+        <item name="android:paddingBottom">@dimen/ButtonPadding</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/Button</item>
+        <item name="android:backgroundTint">@color/gray_700</item>
+        <item name="android:fontFamily">@font/balsamiq_sans</item>
+        <item name="cornerRadius">@dimen/ButtonCorner</item>
+        <item name="android:textColor">@color/white_38</item>
+        <item name="android:enabled">false</item>
+    </style>
+
+    <style name="ButtonTruth" parent="ButtonDisable">
+        <item name="android:backgroundTint">@color/truth</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:enabled">true</item>
+    </style>
+
+    <style name="ButtonDate" parent="ButtonDisable">
+        <item name="android:backgroundTint">@color/dare</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:enabled">true</item>
+    </style>
+
+    <style name="Theme.VerdadOReto.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name = "MyDialog" >
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name = "android:windowContentOverlay" >@null</item >
+        <item name = "android:colorBackgroundCacheHint" >@null</item >
+        <item name = "android:backgroundDimEnabled">true</item>
+        <item name = "android:windowBackground" >@android:color/transparent</item >
+    </style >
+
+</resources>

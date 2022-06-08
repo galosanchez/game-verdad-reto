@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/EditTextHeight"
+    android:layout_marginHorizontal="@dimen/margin_normal"
+    android:layout_marginBottom="@dimen/EditTextMarginVertical"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/imageViewUser"
+        android:layout_width="@dimen/EditTextHeight"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/ic_user_box_18dp" />
+
+    <EditText
+        android:id="@+id/editTextNameUser"
+        style="@style/EditText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/EditTextMarginHorizontal"
+        android:layout_weight="1"
+        android:hint="@string/player_name_default"
+        android:paddingLeft="@dimen/EditTextMarginHorizontal"
+        android:text=""
+        tools:ignore="TouchTargetSizeCheck" />
+
+</LinearLayout>

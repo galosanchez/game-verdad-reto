@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="black">#FF000000</color>
+    <color name="black_87">#DE000000</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_85">#D9FFFFFF</color>
+    <color name="white_70">#B3FFFFFF</color>
+    <color name="white_54">#8AFFFFFF</color>
+    <color name="white_38">#61FFFFFF</color>
+    <color name="white_15">#26FFFFFF</color>
+
+    <color name="gray_900">#1E1E2A</color>
+    <color name="gray_700">#242736</color>
+
+    <color name="blue">#0B90F6</color>
+    <color name="blue_50">#800B90F6</color>
+
+    <!-- Competitor Color -->
+    <color name="competitor_1">#FEC80B</color>
+    <color name="competitor_2">#7E57C2</color>
+    <color name="competitor_3">#D511A7</color>
+    <color name="competitor_4">#15642B</color>
+    <color name="competitor_5">#62B3FF</color>
+    <color name="competitor_6">#E65D23</color>
+    <color name="competitor_7">#038BFF</color>
+    <color name="competitor_8">#00BE7D</color>
+
+    <color name="truth">#03CFFC</color>
+    <color name="truth_70">#3BDCFF</color>
+    <color name="dare">#E905CE</color>
+    <color name="dare_70">#E917D0</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
+
+</resources>
