@@ -1,5 +1,6 @@
 # Verdad o Reto
 Es un **proyecto personal** que se basa en un juego de preguntas y retos.
+
 Puedes revisar el diseño [aquí](https://www.figma.com/file/gV50EPCndxtEAbSqZgQDg4/Game-Verdad-o-Reto).
 
 ## Construido con 🔨
